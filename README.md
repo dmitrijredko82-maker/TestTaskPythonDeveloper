@@ -22,7 +22,7 @@ from reports.base import Report
 
 class NewReport(Report):
 def generate(self, data: dict[str, list[float]]) -> list[tuple[str, float]]:
-# Логика
+(логика для создания отчета)
 return result
 
 
