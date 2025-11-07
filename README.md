@@ -21,8 +21,11 @@ python script.py --files data.csv --report average-rating
 from reports.base import Report
 
 class NewReport(Report):
+
 def generate(self, data: dict[str, list[float]]) -> list[tuple[str, float]]:
+
 (логика для создания отчета)
+
 return result
 
 
@@ -31,8 +34,11 @@ return result
 from reports.new_report import NewReport
 
 REPORTS_REGISTRY = {
+
 'average-rating': AverageRatingReport,
+
 'new-report': NewReport, 
+
 }
 
 
